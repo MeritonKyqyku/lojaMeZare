@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dice-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.dice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  background-color: orange;
+  color: white;
+  border-radius: 8px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+#playBtn {
+  margin: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#playBtn:disabled {
+  background-color: #b0b0b0;
+  cursor: default;
+}
+
+.current-player {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.result {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.scores-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+#scoresTable {
+  border-collapse: collapse;
+  width: 80%;
+  max-width: auto;
+  min-width: auto;
+}
+
+#scoresTable th,
+#scoresTable td {
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+#scoresTable th {
+  background-color: #f0f0f0;
+}
+
+/* Add specific styles for the guess cells */
+.guess-cell {
+  background-color: #ffa07a; /* Light salmon */
+  font-weight: bold;
+}
+
+.guess-cell.correct {
+  background-color: #87cefa; /* Light sky blue */
+}

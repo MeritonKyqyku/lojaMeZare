@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Dice Game</h1>
+  <div class="game-container">
+    <div class="players">
+      <h2>Players</h2>
+      <ul id="playersList"></ul>
+    </div>
+    <div class="dice-container">
+      <div class="dice" id="dice1"></div>
+      <div class="dice" id="dice2"></div>
+    </div>
+    <div class="input-container">
+      <label for="guessInput">Enter Your Guess (2-12):</label>
+      <input type="number" id="guessInput" min="2" max="12">
+      <button id="playBtn" disabled>Roll Dice</button>
+    </div>
+    <div class="current-player" id="currentPlayer">Current Player: </div>
+    <div class="result" id="result"></div>
+  </div>
+  <div class="scores-container">
+    <h2>Scores</h2>
+    <table id="scoresTable">
+      <tr>
+        <th>Player</th>
+        <th>Balance</th>
+      </tr>
+    </table>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
